@@ -1,16 +1,17 @@
 # Current state
 
-Owner: Coordinator. Bootstrap snapshot: 2026-10-03 (Asia/Saigon).
+Owner: Coordinator. Updated bootstrap snapshot: 2026-10-03 (Asia/Saigon).
 Canonical folder: `E:\Github project\Chronos`.
-Stage: approved AI-framework bootstrap, local/unpublished.
+Stage: approved AI framework published to origin/developer by direct Owner authorization GOV-002.
 
-- Owner approved P1/P2/P3 and requested this folder.
-- Installed content: prompts/rules/context, recovery and feature workflows; event folders exist for future handoffs/reviews/releases.
+- Installed: nine role prompts, shared rules/context, feature/recovery workflows and event directories preserved by .gitkeep.
 - Application code/build/CI: absent. Architecture/ADRs: no accepted design.
-- Git at destination: not initialized at initial inspection; no remote, develop/main or integration evidence.
-- Current active role: Prompt Master. No other role is asserted to be running.
-- The documentation initialization is a one-time Owner-authorized scaffold; ongoing edits follow path ownership.
-- Main/Git/deployment authority remains constrained by git.md; framework approval is not a main release approval.
+- Git: initialized; local branch agent/prompt-master/bootstrap; upstream origin/developer.
+- Origin: https://github.com/HieuTran2901/Chrono.git.
+- Initial framework publication verified at commit fee3c7e0e6b661308d1e09005e8f188889068e8e; local HEAD matched the remote developer ref.
+- Standard develop/main flow and Coordinator's operational branch are not established. Developer is the Owner-requested bootstrap publication target; this does not silently rename develop in existing governance.
+- Active role: Prompt Master, with one-time initialization/publication authority. No Reviewer approval or develop/main integration is claimed.
+- Main/Git/deployment authority remains constrained by git.md. GOV-002 authorizes this bootstrap publication only.
 
-Next: Coordinator confirms assignments; Release bootstraps Git under accepted scope and records publication; Architect begins approved design tasks when assigned.
-Use [TASK_BOARD.md](TASK_BOARD.md), [RISKS.md](RISKS.md) and [DECISIONS.md](DECISIONS.md), not this snapshot alone, for authoritative task/risk/decision evidence.
+Next: Coordinator confirms assignments and Release establishes the ongoing workflow within Owner-approved branch authority. Recover from the published developer baseline until operational sources are established; do not claim standard develop integration exists.
+See TASK_BOARD, RISKS and DECISIONS for task/risk/decision evidence.

@@ -1,27 +1,29 @@
-# PM-BOOT-001 — Framework publication / Git bootstrap
+# PM-BOOT-001 — Publication completed / standard workflow pending
 
 author: prompt-master
 task_id: PM-BOOT-001
 recipient: release
-status: REQUESTED_NOT_ASSIGNED
+status: BOOTSTRAP_PUBLICATION_COMPLETED; STANDARD_FLOW_NOT_ASSIGNED
 updated_at: 2026-10-03 (Asia/Saigon)
-source_branch: none
-references: GOV-001; PM-001; TASK_BOARD
+source_branch: agent/prompt-master/bootstrap
+references: GOV-001; GOV-002; TASK_BOARD
 
-## Context / requested work
+## Completed bootstrap
 
-Owner approved the framework and destination E:\Github project\Chronos.
-The destination contains local documentation but did not have a Git repository.
-Coordinator must confirm Release assignment before execution. This file does not activate or message an Agent.
+Owner directly authorized this chat to configure https://github.com/HieuTran2901/Chrono.git and push the framework to developer.
+Git initialized in E:\Github project\Chronos; local branch agent/prompt-master/bootstrap tracks origin/developer.
+Initial remote publication verified at fee3c7e0e6b661308d1e09005e8f188889068e8e.
+This closes the original missing-Git/remote bootstrap blocker. It does not activate Release or approve a main release.
 
-Within the accepted bootstrap scope, Release should establish the Git baseline and main/develop flow without inventing a remote URL, verify docs with Reviewer as required, record immutable revisions and publish operational files on the appropriate role branches.
-Remote setup/push must use an Owner-provided or verified destination.
-Initial history setup is not permission for main feature merges or a production release.
+## Remaining work when Coordinator assigns it
 
-## Contracts and acceptance
+Establish the ongoing operational branch sources and develop/main workflow within Owner authority.
+Do not treat developer as a permanent replacement for develop without a recorded Owner decision.
+No production modules, SDK signatures or guessed build/CI commands are requested.
+Preserve one-writer branch ownership, Reviewer production prohibition, Release-only normal integration and explicit Owner main approval.
+Record actual branch/review/validation/publication evidence in your own files; ACK this handoff by source revision without editing it.
 
-Keep branch ownership, Reviewer production prohibition, Release-only develop integration and explicit Owner main approval.
-Do not add application modules, architecture decisions, SDK signatures or guessed build/CI commands.
-Acceptance: actual repo/branches recorded, baseline reviewed as applicable, Source of Truth revisions discoverable, publication/push outcome explicit; task board updated by Coordinator from evidence.
-Risks: current chat app binding uses old C: project; operational branch protocol cannot run until Git/publication exists.
-Reply/ACK in your own status/file with this handoff reference; do not edit this author's handoff.
+## Limits
+
+This is an informational handoff, not a new Agent activation or autonomous assignment.
+No Reviewer APPROVED, develop/main integration, deployment or branch protection configuration is claimed.

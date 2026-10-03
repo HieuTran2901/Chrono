@@ -1,17 +1,17 @@
 # Task board
 
-Owner: Coordinator. Bootstrap record derived directly from Owner request, not a new implementation assignment.
+Owner: Coordinator. Bootstrap records derive from direct Owner requests GOV-001/GOV-002, not new implementation assignments.
 
-| ID | Objective | Agent | Branch | State | Dependencies / blocker | Review/evidence |
+| ID | Objective | Agent | Branch | State | Dependencies / blocker | Evidence |
 |---|---|---|---|---|---|---|
-| PM-BOOT-001 | Install approved agent framework at E:\Github project\Chronos | Prompt Master, one-time bootstrap | none; Git absent | BLOCKED for Git publication/integration | GOV-001 accepted; local framework prepared; Release Git bootstrap required | Local document/link/content verification; no independent Reviewer approval |
+| PM-BOOT-001 | Install and publish approved agent framework | Prompt Master, one-time Owner authorization | agent/prompt-master/bootstrap → origin/developer | DONE — bootstrap publication exception GOV-002 | Local delivery and requested remote publication complete | Verified initial remote commit fee3c7e0e6b661308d1e09005e8f188889068e8e; no independent review or develop integration claimed |
 
-The local file delivery can be complete while this task remains blocked for publication; do not call it integrated DONE.
-[Release bootstrap handoff](../handoffs/PM-BOOT-001-prompt-master-to-release-git-bootstrap.md) requests the next phase; it does not assert Release has been activated.
+[Release handoff](../handoffs/PM-BOOT-001-prompt-master-to-release-git-bootstrap.md) records completed bootstrap publication and the remaining standard-workflow setup. No Release Agent is asserted to be active.
+Normal branch workflow activation is still pending; it does not make the completed Owner-requested developer push incomplete.
 
-For assigned tasks record: ID, objective, role, explicit paths, branch/worktree, priority, acceptance, accepted design/decision references, dependencies/blocked-by, required tests, reviewer, handoff, candidate/base/component SHAs, review/test/release evidence.
+For assigned implementation tasks record: ID, objective, role, explicit paths, branch/worktree, priority, acceptance, accepted design/decision references, dependencies/blocked-by, tests, reviewer, handoff, candidate/base/component SHAs and review/test/release evidence.
 States: TODO, DESIGNING, READY, IMPLEMENTING, TESTING, REVIEW, FIX_REQUIRED, READY_TO_MERGE, BLOCKED, DONE.
-Coordinator is the only writer. Use evidence from the responsible role for transitions.
+Coordinator is the ongoing writer. Use evidence from the responsible role for transitions.
 READY: sufficient accepted design and permission to implement.
 READY_TO_MERGE: exact candidate reviewed/approved and mandatory tests/docs complete.
-DONE: integrated and validated/pushed to develop, with Release evidence. Main release is a separate event.
+For ordinary features, DONE remains validated/pushed develop integration with Release evidence. Main release is a separate event.
