@@ -2,8 +2,8 @@
 
 author: architect
 task_id: M0-ARCH-001; M1-DESIGN-001
-status: DRAFT_PUBLISHED_ON_AUTHOR_BRANCH; OWNER_DECISIONS_PENDING
-updated_at: 2026-10-03 20:19 +07:00 (Asia/Saigon)
+status: RECONCILIATION_COMPLETE; PUBLICATION_PENDING; PROPOSED_NOT_ACCEPTED
+updated_at: 2026-10-03 21:13 +07:00 (Asia/Saigon)
 source_branch: agent/architecture/m1-foundation
 worktree: E:\Github project\Chronos-worktrees\architect-m1
 implementation_sha: none
@@ -26,7 +26,7 @@ Draft commit and successful push VERIFIED: e21a5d61e8fed1a6931822de86dc0a76ff2ce
 
 Document checks PASS: six-file owned-path allowlist, all local Markdown links, author/branch metadata and git diff --check on the authored documents before commit. Draft/acceptance consistency manually checked; no acceptance claim exists. Application/unit/integration/chaos/performance tests: NOT_RUN; no executable build or implementation exists. DB/HTTP fault-test infrastructure is specified, not provisioned. Official PostgreSQL/Maven/Spring documents checked 2026-10-03, referenced inside drafts; version manifest and installed-runtime compatibility remain UNVERIFIED.
 
-## Blockers / next safe action
+## Blockers / next safe action — historical first-draft snapshot
 
 Owner acceptance of D1–D8; exact runtime/dependency manifest; Core/Data/SDK/Reliability published input reconciliation; Release activation and actual develop setup. Naming itself is resolved by GOV-003. Fetch and remote-head snapshot showed no Core/Data/SDK/Reliability/Reviewer input branches yet; do not fabricate ACK/reconciliation. Coordinator can consume the published draft at e21a5d61e8fed1a6931822de86dc0a76ff2ceea4; revise with actual input before accepted ADR/code assignments. No tool message to another chat is sent under assumed reply permission.
 
@@ -43,6 +43,7 @@ Owner acceptance of D1–D8; exact runtime/dependency manifest; Core/Data/SDK/Re
 Code file/symbol/implementation SHA: none. Regression command/result: NOT_RUN. Draft paths are design references, not invented code hotspots. CODE_NOTES is not edited.
 
 60-second proposed explanation: A valid submit commits a durable job and scoped replay receipt together. A worker with free capacity receives a committed attempt; the handler runs outside the transaction. Completion checks current ownership and lease; recovery can grant a later attempt and rejects old writes. This protects stored outcome, while user effects may repeat after a crash. We plan DB race and lost-response tests plus an external idempotent sink to prove the boundary. No code or test evidence exists yet.
+
 ## Publication receipt — 2026-10-03 20:19 +07:00
 
 Document component SHA: e21a5d61e8fed1a6931822de86dc0a76ff2ceea4 (six assigned files, 349 insertions / 6 deletions). Command: git push -u origin agent/architecture/m1-foundation; result SUCCESS. Remote: https://github.com/HieuTran2901/Chrono.git, independently matched to Owner's direct repository instruction in Prompt master user turn 01a101b6-d816-7393-bc6e-10bc28ea95ac. git ls-remote verified exact remote component SHA. No shared integration/main/deploy/PR created.
@@ -50,3 +51,17 @@ Document component SHA: e21a5d61e8fed1a6931822de86dc0a76ff2ceea4 (six assigned f
 The first push request was rejected by automatic approval review for unverified destination/payload authority; no command executed then. Independently read Owner's repository/publication instruction plus accepted role publish protocol and orchestration instruction; retry with this new evidence was approved and push succeeded. No workaround/bypass used; no unresolved export blocker remains. Content scan found no private-key/token/password patterns (rg no-match exit 1, not an application test).
 
 Validation of component: owned-path and metadata checks PASS, all local Markdown links resolved, staged git diff --check PASS, manually inspected draft/approval consistency and staged status/handoff. Repository was clean after draft commit/push. Application tests/benchmarks remain NOT_RUN; build/version compatibility UNVERIFIED. Remote role-head check at publication still showed no Core/Data/SDK/Reliability/Reviewer input branches. Draft acceptance/reconciliation remains pending, no claim of architecture approval or integration.
+
+## PM-ARCH-001 reconciliation — 2026-10-03 21:13 +07:00
+
+ACK fd56daf45288a4d4c84d6c81da553bc0bee997ec:.ai/handoffs/PM-ARCH-001-prompt-master-to-architect-input-reconciliation.md. Direct human instruction independently read in Prompt Master turn 01a10207-9021-7f32-bb46-9ebc428d4ffd. Recovery: Architect branch HEAD c33a045ba7ae2583a608698dc2b8b714ae2697fd, clean assigned isolated worktree, no other writer observed for this branch; fetched origin, inspected worktree inventory and current own documents. Baseline accepted rules/workflows remain applicable; Coordinator DECISIONS at 7834520 includes GOV-003/004, no D1–D8 approval.
+
+Read full published Core/Data/SDK handoffs, Reliability 25-case/13-question matrix plus handoff, Reviewer report/handoff, Release plan, Coordinator operational context/task/decisions and all seven author statuses. Immutable full-SHA/path manifest is in ARCH-PROP-001; avoid a duplicate manifest here. PM-PUB-001 at f4eb0e3d1a97cf8f42900d6dc06ef3249897d0a8 resolves historical role-publication blockers. Release role is available for planning; actual develop/build/setup still pending. Earlier author-blocked/naming/Release-absent statements are historical, not live blockers.
+
+Completed reconciliation: C01–C09/T01–T10; Data capability/migration/index/retention and D01–D16; every SDK surface/local D1–D5; Reliability Q-01–13/F-01–25; Reviewer CN-01/11/12 and limited approval scope; Release build/CI/artifact/real-DB needs; Coordinator authority/state. All have dispositions in existing proposal. Existing design updated for lock arbitration, DB-clock equality/count, receipt-first catalog replay, authoritative query, handler mismatch/uncertainty, explicit SDK readiness/drain/resource ownership and JCS/schema/compatibility. F01–F17 are planned behavioral oracles, with missing time/policy data identified. No fresh source-of-truth file, active-rule/public API acceptance, production or foreign-role change.
+
+Current reconciliation validation PASS: six-file ownership/metadata/local-link checks, eleven substantive immutable SHA:path resolutions, Core C01–C09 coverage, all 25 Reliability scenario dispositions and 13 question dispositions, all 17 proposed design oracles, git diff --check and manual semantic diff inspection. Staged scope/whitespace check follows before commit. Executable tests/benchmark still NOT_RUN, exact versions/compatibility/JCS implementation UNVERIFIED. Official RFC 8785/8259/3339 checked to ground proposed JSON/time profile; not a Chronos implementation test.
+
+Ready Owner direction choices: D1 mapping, D2 store/pull vs broker, D3 target/build direction, D4 domain semantics, D5 recovery scope, D6 wire/equality/lifecycle, D8 trust direction. Blocking policy/version context: client support window, payload/arrival/task duration/concurrency, outage/pause/drain/replay horizon, sensitive retention, exposure/credential lifecycle and later performance budget; D7 examples are not evidence-backed defaults. Revised draft author/Reviewer recheck and exact build/version manifest remain pending after Owner choices. Next: validate and publish only six existing assigned author documents, record successful SHA receipt, present concise Owner packet in this chat; Coordinator reads updated handoff/packet by SHA. No tool messages to other chats.
+
+CN-01/02/03/06/09 now link reconciliation decisions and F01–F17 via existing proposal/design. Code path/symbol/implementation SHA remains none; tests NOT_RUN; Owner notebook unchanged. 60-second explanation above remains a proposed model, with startup/canonicalization/resource/side-effect assumptions now explicit; no new guarantee is inferred from input publication.

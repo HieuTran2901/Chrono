@@ -3,11 +3,11 @@
 author: architect
 task_id: M0-ARCH-001; M1-DESIGN-001
 status: DRAFT_FOR_OWNER_DECISION
-updated_at: 2026-10-03 20:10 +07:00 (Asia/Saigon)
+updated_at: 2026-10-03 21:13 +07:00 (Asia/Saigon)
 source_branch: agent/architecture/m1-foundation
 references: GOV-001; GOV-002; GOV-003 at efca8bc9c1758848bce9c7721f19adfdca651277; COORD-ROAD-001 at 4a18310a0af1f982ab326b77c496b4721fd8ef18; planning at 2ce8a98f810cd00d268332ad68df45fc8f99a866
 
-Nothing in this document is an accepted architecture, implementation permission or measured guarantee. Baseline 9a45b111847685255cf1006a2b839d31ecdf31a4 contains framework documents only. Decisions are collected in [ARCH-PROP-001](../../.ai/proposals/ARCH-PROP-001-m1-foundation.md); operational state is read from Coordinator's published branch, not this worktree's historical context copies. GOV-003 keeps develop for normal integration and developer for bootstrap; Release activation and actual develop setup remain pending.
+Nothing in this document is an accepted architecture, implementation permission or measured guarantee. Baseline 9a45b111847685255cf1006a2b839d31ecdf31a4 contains framework documents only. Decisions and full source-linked input dispositions are collected in [ARCH-PROP-001](../../.ai/proposals/ARCH-PROP-001-m1-foundation.md); operational state is read from Coordinator's published branch, not this worktree's historical context copies. GOV-003 keeps develop for normal integration and developer for bootstrap. Release role/plan is now available; actual develop setup/build remains pending. PM-PUB-001 verifies all role inputs published, replacing earlier publication-blocker snapshots.
 
 ## WHY and scope
 
@@ -70,4 +70,6 @@ Minimum security is required before any network exposure: authenticated principa
 
 ## Acceptance / unresolved evidence
 
-Owner accepts exact paths/owners, module direction, scope shift, delivery/DB choice, runtime/build family, contract/state guarantees and security/limit policy. Core/Data/SDK/Reliability feedback must be reconciled with immutable sources before design acceptance. Release foundation and executable tests remain blocked. Reviewer must examine the exact draft revision; document review does not approve future implementation. See proposal for decision checklist and trade-offs; tests: NOT_RUN.
+Core/Data/SDK/Reliability feedback and Reviewer/Release/Coordinator evidence have been reconciled at immutable source revisions listed in ARCH-PROP-001; no author approval of this revised draft is inferred. Owner accepts exact paths/owners, module direction, scope shift, delivery/DB choice, runtime/build family and contract/security policy. Release foundation and executable tests remain blocked by accepted choices, parameter/version data and exact assignments. Reviewer must examine the new exact draft revision; existing baseline/planning document approval does not approve this design or future implementation. See proposal for ready direction choices versus unresolved client/workload/retention/exposure questions; tests: NOT_RUN.
+
+Proposed artifact boundary for Release: server executable JAR assembled by app composition, SDK libraries independently consumable JARs, versions from Release-owned parent build configuration if D1/D3 accepted. No tag/package publication/deployment authority follows. Test foundation needs selected real DB, independent worker/server processes, fault/clock barriers and an external effect recorder; container provisioning is conditional on actual environment. Build/test commands, exact tool/library versions and supported external-consumer matrix must be established and validated by Release and owners, not invented in this architecture document. Query/index plans and poll/lease/retention/drain budgets require representative workload. These follow-ups can block final implementation readiness without blocking Owner's direction choices now.
