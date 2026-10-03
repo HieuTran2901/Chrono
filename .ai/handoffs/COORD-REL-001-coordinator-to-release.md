@@ -3,7 +3,7 @@
 author: coordinator
 task_id: M0-RELEASE-PLAN-001
 recipient: release
-status: ASSIGNED; DISPATCH_PENDING
+status: ASSIGNED; DISPATCHED
 updated_at: 2026-10-03 20:12 +07:00 (Asia/Saigon)
 source_branch: agent/coordinator/project-state
 references: GOV-001; GOV-002; GOV-003; M0-GOV-001; M0-REVIEW-001; M0-ARCH-001

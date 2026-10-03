@@ -51,3 +51,11 @@ wait_threads snapshot observed all six active with first commentary acknowledgin
 Owner decision questions submitted in Coordinator chat: keep develop under GOV-001 vs explicitly adopt developer; provide/activate Release chat (no new chat created).
 Follow-up: GOV-003 records Owner naming answer. Follow-up: Owner added Release; chat verified and COORD-REL-001 assigned. Missing path mapping and architecture/build choices will be presented after Architect publishes concrete proposals.
 Next: collect role-published SHAs, forward relevant inputs through published task state, review proposals with Owner, then issue gated build/implementation assignments.
+
+## Release dispatch receipt — 2026-10-03 (Asia/Saigon)
+
+Owner added Release; verified chat 01a101de-81d0-7822-b019-5c4e2d0f90f5 (RELEASE & INTEGRATION ENGINEER).
+Assignment COORD-REL-001 / M0-RELEASE-PLAN-001 published at e1c65b183ae08c9f9d1ebe836bd5918026c48b20; push succeeded and remote matched.
+Task message sent successfully; wait_threads observed active/inProgress. Report/ACK/output SHA remains pending.
+Network-default ls-remote failed with proxy connection; escalated ls-remote succeeded: developer at 9a45b111847685255cf1006a2b839d31ecdf31a4; no develop ref returned.
+No develop setup/integration or build/CI performed. Release prepares plan; exact candidate review and accepted build/path design remain required.
