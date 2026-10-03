@@ -2,7 +2,7 @@
 
 author: sdk
 task_id: M1-SDK-INPUT-001
-status: PREPARATION_READY_FOR_CONSUMPTION
+status: PREPARATION_READY_PUBLICATION_BLOCKED
 updated_at: 2026-10-03 20:04 +07:00 (Asia/Saigon)
 source_branch: agent/sdk/m1-input
 worktree: E:\Github project\Chronos-worktrees\sdk-m1-input
@@ -25,7 +25,7 @@ Authored SDK-M1-001 client/worker contract input: minimum demo, public/internal 
 Read [SDK-M1-001](../handoffs/SDK-M1-001-sdk-to-architect-contract-input.md) for substantive input and next requested action.
 Only changed this status and own handoff; code/notebook/context/rules not edited.
 Preparation ready does not mean task-board DONE, design accepted, Reviewer approved or integrated.
-Commit/push: pending for this document revision; publication receipt must be verified using Git and final chat output. A file cannot embed its own commit SHA.
+Preparation commit: ce3bc35 (full SHA available via git rev-parse ce3bc35); local only. Push of agent/sdk/m1-input was rejected by automatic approval review: the destination was considered unverified and trusted authorization to export this specific status/contract payload was absent. No remote publication is claimed. Owner approval of this concrete export is required; no workaround attempted. This later status revision does not embed its own commit SHA.
 
 ## Verification and limitations
 
@@ -37,5 +37,5 @@ Implementation commits: none. CN code/symbol/evidence: TODO/NOT_RUN.
 ## Blockers and next safe action
 
 Production is blocked by accepted M1 design/public API, build/versions and exact missing path ownership; shared-branch naming and Release activation remain Owner decisions.
-Publish own branch after document checks; Architect/Coordinator consume handoff by immutable SHA and record disposition. Await accepted contracts and explicit M2 SDK assignment before code.
+Next: obtain direct Owner approval to push these SDK documents to the configured GitHub origin. Local handoff is reviewable now. After approved publication, Architect/Coordinator consume handoff by immutable SHA and record disposition. Await accepted contracts and explicit M2 SDK assignment before code.
 No outbound chat message is authorized solely by dispatch; feedback is published here for Coordinator to read.
