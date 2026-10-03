@@ -1,53 +1,45 @@
 # Prompt Master status
 
 author: prompt-master
-task_id: PM-DOC-002
-status: DOCUMENTS_PUBLISHED_ON_AUTHOR_BRANCH; COORDINATOR_HANDOFF_SENT
+task_id: PM-PUB-001
+status: BATCH_PUBLISHED_AND_REMOTE_VERIFIED
 updated_at: 2026-10-03 (Asia/Saigon)
 source_branch: agent/prompt-master/roadmap-notes
 worktree: E:\Github project\Chronos
-artifact_sha: 2ce8a98f810cd00d268332ad68df45fc8f99a866
-baseline_sha: 9a45b111847685255cf1006a2b839d31ecdf31a4
-references: Owner's roadmap/notebook request; GOV-001; GOV-002
+source_manifest_sha: 7834520200abb24738feb55a5923518c23c4fc51
+references: GOV-004; COORD-PUB-001; PM-PUB-001
 
-## Current task and scope
+## Current task / ownership
 
-Owner requested a roadmap to complete Chronos and a place to note code requiring deep understanding for explanations/interviews.
-These are documentation deliverables, not implementation assignments, accepted architecture/API decisions or new Agent ownership.
-Ongoing task state remains Coordinator-owned.
+Human instruction was verified directly in Coordinator chat 01a101ab-edcc-7870-943d-8dcfa48473d4, user message 01a101ef-9bf2-7901-825e-e08ce6162559.
+Scope: publish the frozen completed documentation batch to exact existing author branch names. This is bounded publication authority, not permanent authority over their files or shared integration branches.
+Prompt Master changed only its own receipt/status. No other Agent worktree or commit was edited.
 
-## Work completed
+## Completed work / remote evidence
 
-- [ROADMAP.md](../../ROADMAP.md): M0–M10, prerequisites, participating roles, acceptance/evidence, demo/MVP/release milestones and learning-topic mapping.
-- [CODE_NOTES.md](../../CODE_NOTES.md): 12 priority topics, reusable note format, code/commit/test references, personal explanation prompts and two unimplemented failure scenarios.
-- Source branch created from the published bootstrap baseline; no production code or active governance changes.
-- Earlier bootstrap on developer remains recorded in context/DECISIONS.md.
+Checked exact SHA, clean worktree, changed-path manifest, baseline ancestry and diff whitespace for all 8 roles.
+Architect remote already matched c33a045ba7ae2583a608698dc2b8b714ae2697fd.
+Pushed Core/Data/SDK/Reliability/Reviewer/Release/Coordinator exact commits with one atomic non-forced push; ls-remote confirmed all 8 refs at their expected manifest SHA.
+[Detailed receipt and full SHAs](../handoffs/PM-PUB-001-prompt-master-to-coordinator-publication-receipt.md).
+Origin: https://github.com/HieuTran2901/Chrono.git.
+Developer remains 9a45b111847685255cf1006a2b839d31ecdf31a4; develop/main remain absent. No integration, tag, deployment or package publication.
+The receipt/status's own commit SHA is discovered through Git after publication, not self-embedded.
 
-## Commits and push evidence
+## Validation / limits
 
-2ce8a98f810cd00d268332ad68df45fc8f99a866: docs(plan): add Chronos roadmap and code learning notebook.
-Push to origin/agent/prompt-master/roadmap-notes succeeded and remote SHA matched local HEAD after publication.
-This status update references that already published artifact commit, not its own metadata commit.
-No merge to developer/develop/main; no independent Reviewer APPROVED claim.
+All author inventories matched; git diff --check passed. No potential credential signature found in the Markdown deltas checked; no independent security audit claimed.
+Application tests NOT_RUN: no application/build was present in this task.
+Publication is not accepted architecture or combined candidate review approval.
 
-## Validation
+## Earlier completed work
 
-Verified UTF-8, all local references, M0–M10 and mapping for CN-01 through CN-12.
-Inspected staged paths and git diff --cached --check passed.
-PostgreSQL/Kafka conceptual references checked against official documentation; no dependency version selected.
-No application tests run: no application code/build exists.
+Framework baseline published to developer under GOV-002.
+[ROADMAP.md](../../ROADMAP.md) and [CODE_NOTES.md](../../CODE_NOTES.md) published at 2ce8a98f810cd00d268332ad68df45fc8f99a866.
+Roadmap handoff to Coordinator published at d7d7de6d23a8951d6094a510eb90ec99895550fd; delivery evidence committed at 2de958e42f8d032ae9de0ef1b8901731f695d3bc.
 
-## Risks / next action
+## Risks / next safe action
 
-Developer/develop naming and missing operational branch remain M0 decisions for Owner/Coordinator/Release; roadmap does not silently resolve them.
-All code links/symbols/test evidence in the notebook remain TODO until real implementation exists.
-Owner reads the roadmap; Coordinator can decompose agreed milestones under existing ownership, Architect proposes M1 design.
-If another Agent needs these artifacts, read them from this author's branch at the published revision; no shared-tab memory assumption.
-## Coordinator delivery — 2026-10-03 (Asia/Saigon)
-
-Owner directly requested communication to Coordinator for appropriate Agent orchestration.
-Published handoff: [PM-DOC-002](../handoffs/PM-DOC-002-prompt-master-to-coordinator-roadmap.md), revision d7d7de6d23a8951d6094a510eb90ec99895550fd.
-Message sent successfully to Coordinator chat 01a101ab-edcc-7870-943d-8dcfa48473d4 (local), with immutable artifact/handoff references and Owner-authorization source chat.
-A compact wait_threads snapshot confirmed Coordinator is active and stated it would verify the Owner instruction, recover Git/handoff context and dispatch work that meets the gates.
-No claim that assignments, architecture acceptance or downstream implementation have completed.
-Next: Coordinator records its ACK/task/dependency/dispatch evidence in its own files and reports to Owner in its chat.
+Coordinator record GOV-003 confirms develop for normal integration and developer for bootstrap. Remote develop has not yet been established.
+Architect D1–D8 remain proposed; reconcile role inputs and obtain Owner decisions before dependent implementation.
+Reviewer baseline/planning approval is not approval of an exact combined candidate; Release staging/review/integration gates remain.
+Coordinator reads this receipt and updates its own publication state. No reverse tool-message sent without separate human authorization.
