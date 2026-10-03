@@ -1,7 +1,7 @@
 # Task board
 
 author: coordinator
-updated_at: 2026-10-03 20:07 +07:00 (Asia/Saigon)
+updated_at: 2026-10-03 20:12 +07:00 (Asia/Saigon)
 source_branch: agent/coordinator/project-state
 baseline_sha: 9a45b111847685255cf1006a2b839d31ecdf31a4
 references: GOV-001; GOV-002; COORD-001; COORD-ROAD-001
@@ -14,10 +14,11 @@ PM-DOC-002 ACK: received at d7d7de6d23a8951d6094a510eb90ec99895550fd.
 |---|---|---|---|---|---|
 | PM-BOOT-001 | Approved framework publication | Prompt Master | agent/prompt-master/bootstrap | DONE (GOV-002 bootstrap exception) | fee3c7e initial publication; baseline 9a45b11 on origin/developer; no independent approval claimed |
 | COORD-ROAD-001 | Recover, plan and dispatch roadmap | Coordinator | agent/coordinator/project-state | IMPLEMENTING (documentation) | Assignment 4a18310 published; six sends succeeded, active initial commentary; outputs pending |
-| M0-GOV-001 | Confirm developer/develop flow and activate Release | Owner / Coordinator; Release unassigned | none | BLOCKED | GOV-003: develop confirmed; Release chat/activation still required |
+| M0-GOV-001 | Establish normal develop workflow | Coordinator / Release | agent/release/foundation-plan | DESIGNING (operational plan) | GOV-003 develop confirmed; Release chat verified; actual setup/integration evidence pending |
+| M0-RELEASE-PLAN-001 | Prepare develop setup and document-candidate manifest | Release | agent/release/foundation-plan | TODO (assigned preparation) | COORD-REL-001; depends on exact review/candidate evidence before integration |
 | M0-ARCH-001 | Propose exact missing path mapping and foundation | Architect | agent/architecture/m1-foundation | DESIGNING (draft) | GOV-001 ownership; mapping/build choices require Owner acceptance |
 | M0-REVIEW-001 | Independently review bootstrap and planning references | Reviewer | agent/review/M0-REVIEW-001 | REVIEW (documents) | baseline 9a45b11; planning d7d7de6; document review only, no feature approval |
-| M0-BUILD-001 | Implement approved build/test/CI foundation | Release (unassigned) | agent/release/foundation | BLOCKED | M0-GOV-001; approved M0-ARCH-001 choices and exact paths |
+| M0-BUILD-001 | Implement approved build/test/CI foundation | Release (role available; build not assigned) | agent/release/foundation | BLOCKED | M0-GOV-001; approved M0-ARCH-001 choices and exact paths |
 | M1-DESIGN-001 | Draft submit → persist → execute → outcome contracts | Architect | agent/architecture/m1-foundation | DESIGNING (draft) | Final M0 decisions needed before acceptance/implementation; design may be prepared now |
 | M1-CORE-INPUT-001 | Engine/scheduler contract questions | Core | agent/core/m1-input | DESIGNING (contract input) | Feedback to M1 design; no production writes |
 | M1-DATA-INPUT-001 | Persistence/messaging failure and transaction questions | Data | agent/data/m1-input | DESIGNING (contract input) | Feedback to M1 design; no schema/migration/production writes |
