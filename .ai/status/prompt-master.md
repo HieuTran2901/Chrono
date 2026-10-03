@@ -1,31 +1,45 @@
 # Prompt Master status
 
 author: prompt-master
-task_id: PM-BOOT-001
-status: BOOTSTRAP_PUBLISHED
+task_id: PM-DOC-002
+status: DOCUMENTS_PUBLISHED_ON_AUTHOR_BRANCH
 updated_at: 2026-10-03 (Asia/Saigon)
-source_branch: agent/prompt-master/bootstrap
+source_branch: agent/prompt-master/roadmap-notes
 worktree: E:\Github project\Chronos
-implementation_sha: fee3c7e0e6b661308d1e09005e8f188889068e8e
-references: GOV-001; GOV-002; PM-001
+artifact_sha: 2ce8a98f810cd00d268332ad68df45fc8f99a866
+baseline_sha: 9a45b111847685255cf1006a2b839d31ecdf31a4
+references: Owner's roadmap/notebook request; GOV-001; GOV-002
 
-## Completed work
+## Current task and scope
 
-Prepared the approved AI framework, then initialized Git and origin under the Owner's direct publication request.
-Added .gitignore for local environment/IDE/build artifacts and .gitkeep files so empty event/design directories survive a clone.
-Committed the framework and pushed HEAD to refs/heads/developer; local branch now tracks origin/developer.
-No application implementation, architecture/API decision, Reviewer approval, develop/main merge or deployment was performed.
+Owner requested a roadmap to complete Chronos and a place to note code requiring deep understanding for explanations/interviews.
+These are documentation deliverables, not implementation assignments, accepted architecture/API decisions or new Agent ownership.
+Ongoing task state remains Coordinator-owned.
 
-## Publication evidence and validation
+## Work completed
 
-Origin: https://github.com/HieuTran2901/Chrono.git.
-Initial verified commit: fee3c7e0e6b661308d1e09005e8f188889068e8e.
-git push --set-upstream origin HEAD:refs/heads/developer succeeded.
-git ls-remote origin refs/heads/developer matched git rev-parse HEAD after that push.
-Validation: all relative links in 25 documents verified; staged paths inspected; git diff --cached --check passed after final-newline cleanup; 31 initial tracked files include .gitignore and five .gitkeep files.
-No application build/tests exist. Current metadata synchronization refers to the already verified initial commit; its own SHA is not embedded here.
+- [ROADMAP.md](../../ROADMAP.md): M0–M10, prerequisites, participating roles, acceptance/evidence, demo/MVP/release milestones and learning-topic mapping.
+- [CODE_NOTES.md](../../CODE_NOTES.md): 12 priority topics, reusable note format, code/commit/test references, personal explanation prompts and two unimplemented failure scenarios.
+- Source branch created from the published bootstrap baseline; no production code or active governance changes.
+- Earlier bootstrap on developer remains recorded in context/DECISIONS.md.
 
-## Next safe action
+## Commits and push evidence
 
-Ongoing feature work still needs Coordinator assignment, accepted architecture and the normal Release/review flow.
-Developer is the requested initial publication branch, not an implicit replacement for develop.
+2ce8a98f810cd00d268332ad68df45fc8f99a866: docs(plan): add Chronos roadmap and code learning notebook.
+Push to origin/agent/prompt-master/roadmap-notes succeeded and remote SHA matched local HEAD after publication.
+This status update references that already published artifact commit, not its own metadata commit.
+No merge to developer/develop/main; no independent Reviewer APPROVED claim.
+
+## Validation
+
+Verified UTF-8, all local references, M0–M10 and mapping for CN-01 through CN-12.
+Inspected staged paths and git diff --cached --check passed.
+PostgreSQL/Kafka conceptual references checked against official documentation; no dependency version selected.
+No application tests run: no application code/build exists.
+
+## Risks / next action
+
+Developer/develop naming and missing operational branch remain M0 decisions for Owner/Coordinator/Release; roadmap does not silently resolve them.
+All code links/symbols/test evidence in the notebook remain TODO until real implementation exists.
+Owner reads the roadmap; Coordinator can decompose agreed milestones under existing ownership, Architect proposes M1 design.
+If another Agent needs these artifacts, read them from this author's branch at the published revision; no shared-tab memory assumption.
