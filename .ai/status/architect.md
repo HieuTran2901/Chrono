@@ -2,8 +2,8 @@
 
 author: architect
 task_id: M0-ARCH-001; M1-DESIGN-001
-status: RECONCILIATION_COMPLETE; PUBLICATION_PENDING; PROPOSED_NOT_ACCEPTED
-updated_at: 2026-10-03 21:13 +07:00 (Asia/Saigon)
+status: RECONCILIATION_PUBLISHED; PROPOSED_NOT_ACCEPTED; OWNER_DECISIONS_PENDING
+updated_at: 2026-10-03 21:17 +07:00 (Asia/Saigon)
 source_branch: agent/architecture/m1-foundation
 worktree: E:\Github project\Chronos-worktrees\architect-m1
 implementation_sha: none
@@ -65,3 +65,8 @@ Current reconciliation validation PASS: six-file ownership/metadata/local-link c
 Ready Owner direction choices: D1 mapping, D2 store/pull vs broker, D3 target/build direction, D4 domain semantics, D5 recovery scope, D6 wire/equality/lifecycle, D8 trust direction. Blocking policy/version context: client support window, payload/arrival/task duration/concurrency, outage/pause/drain/replay horizon, sensitive retention, exposure/credential lifecycle and later performance budget; D7 examples are not evidence-backed defaults. Revised draft author/Reviewer recheck and exact build/version manifest remain pending after Owner choices. Next: validate and publish only six existing assigned author documents, record successful SHA receipt, present concise Owner packet in this chat; Coordinator reads updated handoff/packet by SHA. No tool messages to other chats.
 
 CN-01/02/03/06/09 now link reconciliation decisions and F01–F17 via existing proposal/design. Code path/symbol/implementation SHA remains none; tests NOT_RUN; Owner notebook unchanged. 60-second explanation above remains a proposed model, with startup/canonicalization/resource/side-effect assumptions now explicit; no new guarantee is inferred from input publication.
+## Reconciliation publication receipt — 2026-10-03 21:17 +07:00
+
+Reconciled design/proposal component: 70d81795d6372032cd2296b0d2dcdf9113598b71, six assigned Markdown paths, 213 insertions / 17 deletions. Command: git push origin agent/architecture/m1-foundation, SUCCESS; ls-remote verified remote SHA equals local component. Remote precondition c33a045ba7ae2583a608698dc2b8b714ae2697fd matched before push. Staged six-path allowlist and git diff --cached --check passed. No remote publication blocker remains. No force-push, shared integration, deployment or foreign-file mutation occurred.
+
+The reconciliation preparation and its publication are complete. Coordinator can read ARCH-PROP-001 and revised design at component SHA above; this receipt is a subsequent metadata-only revision whose SHA is supplied in chat/consumer after commit, not self-embedded. Owner direction/policy decisions and exact revised-document/candidate review remain pending. Tests/benchmarks NOT_RUN; no accepted ADR/API or implementation readiness claimed. Concise Owner packet is presented in this Architect chat, with current file handoff for Coordinator. Historical pending-publication/activation statements are superseded only for publication/role availability by actual receipts, never rewritten into acceptance.
