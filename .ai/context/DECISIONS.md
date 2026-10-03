@@ -50,3 +50,14 @@ Preserve future rejected/superseded decisions with their proposal/ADR references
 - No rename/deletion of developer, recurring push authority change, main release or deployment is authorized.
 - Release must establish the actual develop workflow under existing authority after activation and appropriate evidence gates. Branch setup has not been performed by Coordinator.
 - Related task: M0-GOV-001. Naming blocker resolved; Release activation remains pending.
+
+## GOV-004 — Consolidate and publish completed Agent documentation via Prompt Master
+
+- Status: ACCEPTED (bounded publication instruction).
+- Date: 2026-10-03, Asia/Saigon.
+- Decision maker: human Owner.
+- Direct evidence in Coordinator chat 01a101ab-edcc-7870-943d-8dcfa48473d4: “tất cả các agents hiện tại đã hoàn thành, nhưng chưa có quyền để push lên github, bạn hãy điều phối các agents này tổng hợp sau đó báo cáo với prompt master để tiến hành push lên git”.
+- Scope: Coordinator gathers final local manifests; Prompt Master proceeds with Git publication of these completed Agent documents to the established Chrono origin on exact listed author branches, with receipts.
+- Manifest: COORD-PUB-001 (../handoffs/COORD-PUB-001-coordinator-to-prompt-master.md); immutable handoff SHA supplied after commit.
+- No permanent role/ownership/Git-rule change, design/API acceptance, develop/main integration, force-push, deployment or artifact publishing inferred.
+- Earlier automatic-review publication rejections remain historical evidence; no successful publication is claimed for this batch until remote verification.
