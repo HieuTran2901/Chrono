@@ -3,7 +3,7 @@
 author: reliability
 recipient: coordinator; architect
 task_id: M1-TEST-PLAN-001
-status: PREPARED; PUBLICATION_PENDING; NOT_RUN
+status: PREPARED; PUBLICATION_BLOCKED_AUTO_REVIEW; NOT_RUN
 updated_at: 2026-10-03 20:04 +07:00 (Asia/Saigon)
 source_branch: agent/test/m1-failure-plan
 references: COORD-ROAD-001; M1-DESIGN-001; M2-VERIFY-001
@@ -25,3 +25,5 @@ Acceptance coverage: 25 scenarios cover first-job control/negative/errors, dupli
 No accepted design/ADR, code/test component or infrastructure exists in inspected references. Matrix is not an executable guarantee, schema, API or technology choice. Critical risk: conflating stored ownership/result protection with preventing repeated external effects. Conditional messaging rows do not select outbox or a broker.
 CN-02–08/12 hotspots and missing code/test evidence are recorded in Reliability status; notebook untouched. No production fixes, Reviewer approval, normal integration or main/deployment claimed.
 Next: read this publication by SHA; resolve M2 oracles; publish accepted design and exact future task assignment. Production bugs discovered later go to their file owners with preserved reproduction.
+
+Local artifact commit: 343edd9d738f6bac1f74b6dd216de5ee5d5a72e2. Remote push was rejected by automatic approval review; publication requires direct Owner confirmation in this chat. Read local artifact by git show if available; do not claim remote delivery.
