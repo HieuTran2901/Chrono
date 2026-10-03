@@ -2,8 +2,8 @@
 
 author: data
 task_id: M1-DATA-INPUT-001
-status: PREPARATION_COMPLETE; PUBLICATION_PENDING
-updated_at: 2026-10-03 20:04 +07:00 (Asia/Saigon)
+status: PREPARATION_COMPLETE; PUBLICATION_BLOCKED_AUTO_REVIEW
+updated_at: 2026-10-03 20:09 +07:00 (Asia/Saigon)
 source_branch: agent/data/m1-input
 worktree: E:\Github project\Chronos-worktrees\data-m1-input
 baseline_sha: 9a45b111847685255cf1006a2b839d31ecdf31a4
@@ -24,11 +24,11 @@ Only authored writes: .ai/status/data.md and .ai/handoffs/M1-DATA-INPUT-001-data
 
 ## Validation / publication
 
-Application tests: NOT_RUN; no code/build assigned or present in baseline. Documentation validation planned: git diff --check, exact changed-path inspection, metadata/source references/relative handoff link and acceptance coverage. These are documentation checks, not application tests or independent review.
-Commit/push at this file revision: pending. Publication receipt will be reported by full SHA in chat and, after verified push, a later status revision referencing the earlier publication commit. No file embeds its own commit SHA. No Reviewer approval, normal integration or task-board DONE claimed.
+Application tests: NOT_RUN; no code/build assigned or present in baseline. Documentation validation PASS: git diff --check, exact changed-path inspection, metadata/source references/relative handoff link and acceptance coverage. These are documentation checks, not application tests or independent review.
+Handoff/status local commit: 6021d23400257ad49e0c2bb6307a2c409cad8f39. Documentation diff/path/link/acceptance inspection passed before commit; clean worktree verified afterward. Push of agent/data/m1-input to origin was rejected by automatic approval review before execution: external GitHub egress of internal status/handoff lacked direct human authorization for this payload/destination. No push succeeded; no upstream/publication SHA or cross-machine delivery claimed. Owner authorization is required before retry; no workaround attempted. This later status revision references the earlier local commit, not its own SHA. No Reviewer approval, normal integration or task-board DONE claimed.
 
 ## Blockers / next action
 
-Analysis itself has no unresolved blocker. Production M2 remains blocked by accepted Architect/Owner contracts and technology decisions, explicit task paths, build/test foundation; M0 developer/develop/Release/missing ownership decisions remain Coordinator's responsibility. Events/outbox/DLQ/lease features are proposed or conditional, not implemented guarantees.
+Analysis itself has no unresolved blocker. Remote publication is blocked by automatic approval review; ask Owner to authorize sending these two documents to https://github.com/HieuTran2901/Chrono.git on agent/data/m1-input. Production M2 remains blocked by accepted Architect/Owner contracts and technology decisions, explicit task paths, build/test foundation; M0 developer/develop/Release/missing ownership decisions remain Coordinator's responsibility. Events/outbox/DLQ/lease features are proposed or conditional, not implemented guarantees.
 
-Next safe action: inspect and publish the two owned documents on agent/data/m1-input; Architect/Coordinator can consume them by immutable SHA and record ACK/decisions in their own files. No tool message to another chat is authorized by the received Agent message alone. Await accepted design and an explicit implementation assignment before production writes.
+Next safe action: provide the two local document links and commit receipt to Owner; await direct publication authorization. Local same-repository readers may inspect 6021d23400257ad49e0c2bb6307a2c409cad8f39 by git show, but must not claim remote publication. No tool message to another chat is authorized by the received Agent message alone. Await accepted design and an explicit implementation assignment before production writes.
