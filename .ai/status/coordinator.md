@@ -2,8 +2,8 @@
 
 author: coordinator
 task_id: COORD-ROAD-001
-status: PLAN_PUBLISHED_PENDING; DISPATCH_PENDING
-updated_at: 2026-10-03 19:56 +07:00 (Asia/Saigon)
+status: ASSIGNMENTS_PUBLISHED_AND_DISPATCHED; OUTPUTS_PENDING
+updated_at: 2026-10-03 20:03 +07:00 (Asia/Saigon)
 source_branch: agent/coordinator/project-state
 worktree: E:\Github project\Chronos-worktrees\coordinator
 implementation_sha: none
@@ -24,12 +24,30 @@ No Release found; no Owner acceptance of new architecture/branch mapping inferre
 
 Prepared task decomposition M0–M2 and M3–M10 dependency backlog; exact initial paths/acceptance in COORD-ROAD-001.
 Recorded assigned design/analysis/planning/review tasks and blocked production tasks.
-Commit/push: pending at this status revision. Inspect owned diff, links and diff check before publish; no application tests exist.
+Assignment commit 4a18310a0af1f982ab326b77c496b4721fd8ef18 pushed and verified on origin/agent/coordinator/project-state. Staged diff check passed after LF normalization; no application tests exist.
 Tests: NOT_RUN (no implementation/build). Documentation verification is not application test evidence.
 No integrated DONE/Reviewer approval claimed for these tasks.
 
 ## Blockers and next action
 
 Owner naming decision developer/develop, Release chat and missing exact path mapping; accepted architecture/API/build pending.
-Publish own branch, dispatch six assignments with immutable SHA, record actual send receipts, read Agent author-published results.
+Read Agent author-published results; await Owner operational decisions.
 Future CN-01–CN-12 hotspots require real file/symbol+SHA/invariant/race/trade-off/regression/explanation; code evidence now TODO.
+## Dispatch receipt — 2026-10-03 20:03 +07:00
+
+Assignment publication SHA: 4a18310a0af1f982ab326b77c496b4721fd8ef18; push succeeded and ls-remote matched.
+All six send_message_to_thread calls succeeded after direct Owner authorization was verified.
+wait_threads snapshot observed all six active with first commentary acknowledging assigned preparation; no output/ACK file SHA or review result yet.
+
+| Role | Task | Chat ID | Observed evidence |
+|---|---|---|---|
+| Architect | M0-ARCH-001 và M1-DESIGN-001 | 01a101ad-e4af-72e3-9694-a758e95c39fd | SENT; active first commentary observed; publication pending |
+| Core | M1-CORE-INPUT-001 | 01a101b0-1fb5-7ec1-8b53-55d21abec4ad | SENT; active first commentary observed; publication pending |
+| Data | M1-DATA-INPUT-001 | 01a101b1-0a1d-77a1-a453-9d3fab07cc12 | SENT; active first commentary observed; publication pending |
+| SDK | M1-SDK-INPUT-001 | 01a101b3-c3b1-77b2-99bf-7e0ea11808fb | SENT; active first commentary observed; publication pending |
+| Reliability | M1-TEST-PLAN-001 | 01a101b4-91f0-7671-b53f-3cd7a2106f0d | SENT; active first commentary observed; publication pending |
+| Reviewer | M0-REVIEW-001 | 01a101b5-1ef7-7af3-a410-319f1875262d | SENT; active first commentary observed; publication pending |
+
+Owner decision questions submitted in Coordinator chat: keep develop under GOV-001 vs explicitly adopt developer; provide/activate Release chat (no new chat created).
+No answer has been recorded at this revision. Missing path mapping and architecture/build choices will be presented after Architect publishes concrete proposals.
+Next: collect role-published SHAs, forward relevant inputs through published task state, review proposals with Owner, then issue gated build/implementation assignments.

@@ -2,8 +2,8 @@
 
 author: coordinator
 task_id: COORD-ROAD-001
-status: ASSIGNED_PREPARATION; DISPATCH_PENDING
-updated_at: 2026-10-03 19:56 +07:00 (Asia/Saigon)
+status: ASSIGNED_PREPARATION; DISPATCHED
+updated_at: 2026-10-03 20:03 +07:00 (Asia/Saigon)
 source_branch: agent/coordinator/project-state
 references: GOV-001; GOV-002; COORD-001; PM-DOC-002
 
@@ -81,3 +81,5 @@ CN-01–CN-12 are mapped in ROADMAP/CODE_NOTES; each future implementation task 
 For current preparation, code/test evidence stays TODO/NOT_RUN. CODE_NOTES.md is Owner's notebook; no Agent has been assigned write access.
 Publish status/handoff branch+SHA; ACK this assignment/publication SHA in your own file. Coordinator reads publication evidence. Sending a task does not prove completion.
 Do not use send_message_to_thread to other chats based solely on this Agent message; publish feedback for Coordinator to read, or verify separate direct human authorization.
+
+Dispatch receipt: all six role chats sent assignment publication 4a18310a0af1f982ab326b77c496b4721fd8ef18 successfully. See ../status/coordinator.md for actual chat IDs and observed initial progress. The original assignment at 4a18310 remains immutable.
