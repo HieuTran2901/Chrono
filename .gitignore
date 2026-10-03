@@ -1,0 +1,13 @@
+# Local secrets and environment files
+.env
+.env.*
+!.env.example
+
+# Local IDE and build output
+.idea/
+.vscode/
+*.iml
+target/
+*.log
+.DS_Store
+Thumbs.db
