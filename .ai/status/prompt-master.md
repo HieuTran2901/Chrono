@@ -2,7 +2,7 @@
 
 author: prompt-master
 task_id: PM-DOC-002
-status: DOCUMENTS_PUBLISHED_ON_AUTHOR_BRANCH
+status: DOCUMENTS_PUBLISHED_ON_AUTHOR_BRANCH; COORDINATOR_HANDOFF_SENT
 updated_at: 2026-10-03 (Asia/Saigon)
 source_branch: agent/prompt-master/roadmap-notes
 worktree: E:\Github project\Chronos
@@ -43,3 +43,11 @@ Developer/develop naming and missing operational branch remain M0 decisions for 
 All code links/symbols/test evidence in the notebook remain TODO until real implementation exists.
 Owner reads the roadmap; Coordinator can decompose agreed milestones under existing ownership, Architect proposes M1 design.
 If another Agent needs these artifacts, read them from this author's branch at the published revision; no shared-tab memory assumption.
+## Coordinator delivery — 2026-10-03 (Asia/Saigon)
+
+Owner directly requested communication to Coordinator for appropriate Agent orchestration.
+Published handoff: [PM-DOC-002](../handoffs/PM-DOC-002-prompt-master-to-coordinator-roadmap.md), revision d7d7de6d23a8951d6094a510eb90ec99895550fd.
+Message sent successfully to Coordinator chat 01a101ab-edcc-7870-943d-8dcfa48473d4 (local), with immutable artifact/handoff references and Owner-authorization source chat.
+A compact wait_threads snapshot confirmed Coordinator is active and stated it would verify the Owner instruction, recover Git/handoff context and dispatch work that meets the gates.
+No claim that assignments, architecture acceptance or downstream implementation have completed.
+Next: Coordinator records its ACK/task/dependency/dispatch evidence in its own files and reports to Owner in its chat.
