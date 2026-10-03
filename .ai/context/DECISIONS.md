@@ -29,3 +29,13 @@ Owner: Coordinator. This index records decisions; it does not create authority.
 - Publication receipt/status: [prompt-master.md](../status/prompt-master.md).
 
 Preserve future rejected/superseded decisions with their proposal/ADR references. These records refer to earlier publication evidence; they do not embed the SHA of their own metadata commit.
+
+## COORD-001 — Roadmap orchestration authorization
+
+- Status: ACCEPTED (scope: dispatch/coordination only).
+- Date: 2026-10-03, Asia/Saigon.
+- Decision maker: human Owner.
+- Evidence verified by read_thread: Prompt master chat 01a10184-0fb5-7501-9c44-e387cee5a15d, user turn 01a101d0-d3f9-7220-a142-9f785b02d8cd: “bạn hãy truyền đạt điều này đến coordinator để nó điều phối đến agent hợp lí”.
+- Scope: Coordinator decomposes roadmap and dispatches appropriate existing Agent chats within GOV-001 ownership. Does not accept architecture/API, change roles/paths/Git authority, create chats or authorize main.
+- Source handoff: d7d7de6d23a8951d6094a510eb90ec99895550fd:.ai/handoffs/PM-DOC-002-prompt-master-to-coordinator-roadmap.md.
+- Pending Owner decisions: developer/develop normal integration naming; Release activation; exact missing path mapping proposed by Architect. None accepted here.

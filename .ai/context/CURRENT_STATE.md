@@ -1,17 +1,21 @@
 # Current state
 
-Owner: Coordinator. Updated bootstrap snapshot: 2026-10-03 (Asia/Saigon).
-Canonical folder: `E:\Github project\Chronos`.
-Stage: approved AI framework published to origin/developer by direct Owner authorization GOV-002.
+author: coordinator
+updated_at: 2026-10-03 19:56 +07:00 (Asia/Saigon)
+source_branch: agent/coordinator/project-state
 
-- Installed: nine role prompts, shared rules/context, feature/recovery workflows and event directories preserved by .gitkeep.
-- Application code/build/CI: absent. Architecture/ADRs: no accepted design.
-- Git: initialized; local branch agent/prompt-master/bootstrap; upstream origin/developer.
-- Origin: https://github.com/HieuTran2901/Chrono.git.
-- Initial framework publication verified at commit fee3c7e0e6b661308d1e09005e8f188889068e8e; local HEAD matched the remote developer ref.
-- Standard develop/main flow and Coordinator's operational branch are not established. Developer is the Owner-requested bootstrap publication target; this does not silently rename develop in existing governance.
-- Active role: Prompt Master, with one-time initialization/publication authority. No Reviewer approval or develop/main integration is claimed.
-- Main/Git/deployment authority remains constrained by git.md. GOV-002 authorizes this bootstrap publication only.
+Canonical repository: E:\Github project\Chronos. Origin: https://github.com/HieuTran2901/Chrono.git.
+Operational Coordinator worktree: E:\Github project\Chronos-worktrees\coordinator.
+Baseline: 9a45b111847685255cf1006a2b839d31ecdf31a4 on origin/developer, observed after fetch.
+Prompt Master checkout is on agent/prompt-master/roadmap-notes at d7d7de6d23a8951d6094a510eb90ec99895550fd (observed on recovery).
 
-Next: Coordinator confirms assignments and Release establishes the ongoing workflow within Owner-approved branch authority. Recover from the published developer baseline until operational sources are established; do not claim standard develop integration exists.
-See TASK_BOARD, RISKS and DECISIONS for task/risk/decision evidence.
+Framework/Git publication exists (GOV-002). No application implementation/build/CI or accepted architecture/SDK contract exists in the inspected baseline.
+Roadmap/notebook at 2ce8a98 are published on Prompt Master's own branch, not integrated. They remain planning references.
+Coordinator now owns operational context and has ACKed PM-DOC-002; assignments are recorded in TASK_BOARD and COORD-ROAD-001.
+Six existing role chats were inspected; their prior completed role-reading turns were idle with stale pre-Git state. Dispatch evidence will be recorded in Coordinator status; assignment does not prove execution/completion.
+No Release chat found in app listing. M0 Git integration naming/Release activation and exact missing path mapping require Owner decisions.
+Design/contract-input/test-planning/document-review work can proceed; production M2 remains blocked by accepted design/build/ownership.
+No Reviewer approval or normal develop integration is claimed. Main/deployment not authorized.
+
+Source references: TASK_BOARD.md, DECISIONS.md, RISKS.md and ../status/coordinator.md.
+Next safe action: publish operational records and dispatch preparation; collect author SHAs/review and bring concrete M0/M1 decisions to Owner.
