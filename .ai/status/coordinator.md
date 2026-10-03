@@ -3,7 +3,7 @@
 author: coordinator
 task_id: COORD-ROAD-001
 status: ASSIGNMENTS_PUBLISHED_AND_DISPATCHED; OUTPUTS_PENDING
-updated_at: 2026-10-03 20:03 +07:00 (Asia/Saigon)
+updated_at: 2026-10-03 20:07 +07:00 (Asia/Saigon)
 source_branch: agent/coordinator/project-state
 worktree: E:\Github project\Chronos-worktrees\coordinator
 implementation_sha: none
@@ -30,7 +30,7 @@ No integrated DONE/Reviewer approval claimed for these tasks.
 
 ## Blockers and next action
 
-Owner naming decision developer/develop, Release chat and missing exact path mapping; accepted architecture/API/build pending.
+GOV-003 resolved naming: develop normal integration; developer bootstrap only. Release chat and missing exact path mapping remain; accepted architecture/API/build pending.
 Read Agent author-published results; await Owner operational decisions.
 Future CN-01–CN-12 hotspots require real file/symbol+SHA/invariant/race/trade-off/regression/explanation; code evidence now TODO.
 ## Dispatch receipt — 2026-10-03 20:03 +07:00
@@ -49,5 +49,5 @@ wait_threads snapshot observed all six active with first commentary acknowledgin
 | Reviewer | M0-REVIEW-001 | 01a101b5-1ef7-7af3-a410-319f1875262d | SENT; active first commentary observed; publication pending |
 
 Owner decision questions submitted in Coordinator chat: keep develop under GOV-001 vs explicitly adopt developer; provide/activate Release chat (no new chat created).
-No answer has been recorded at this revision. Missing path mapping and architecture/build choices will be presented after Architect publishes concrete proposals.
+Follow-up: GOV-003 records Owner naming answer. Release activation question remains unanswered. Missing path mapping and architecture/build choices will be presented after Architect publishes concrete proposals.
 Next: collect role-published SHAs, forward relevant inputs through published task state, review proposals with Owner, then issue gated build/implementation assignments.

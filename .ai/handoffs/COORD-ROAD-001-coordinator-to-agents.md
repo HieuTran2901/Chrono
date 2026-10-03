@@ -3,7 +3,7 @@
 author: coordinator
 task_id: COORD-ROAD-001
 status: ASSIGNED_PREPARATION; DISPATCHED
-updated_at: 2026-10-03 20:03 +07:00 (Asia/Saigon)
+updated_at: 2026-10-03 20:07 +07:00 (Asia/Saigon)
 source_branch: agent/coordinator/project-state
 references: GOV-001; GOV-002; COORD-001; PM-DOC-002
 
@@ -73,7 +73,7 @@ Acceptance: source-linked report, explicit scope and tests/validation available;
 M2-Core/Data/SDK and executable Reliability tests are BLOCKED, not dispatched as code tasks.
 Require accepted M1 contracts/design and exact Owner-approved missing path mapping, build/test foundation, explicit per-task paths/acceptance and isolated branches.
 Reviewer examines exact tested candidate; Release integrates only approved revisions. No Release chat found in current app listing; report to Owner rather than create one.
-Normal integration branch developer/develop requires Owner resolution. Main release needs named immutable Owner approval.
+GOV-003: Owner confirmed develop for normal integration; developer bootstrap only. Release activation/setup remains pending. Main release needs named immutable Owner approval.
 
 ## Learning notes and return evidence
 
