@@ -2,8 +2,8 @@
 
 author: architect
 task_id: M0-ARCH-001; M1-DESIGN-001
-status: DRAFT_PREPARED_FOR_PUBLICATION; OWNER_DECISIONS_PENDING
-updated_at: 2026-10-03 20:10 +07:00 (Asia/Saigon)
+status: DRAFT_PUBLISHED_ON_AUTHOR_BRANCH; OWNER_DECISIONS_PENDING
+updated_at: 2026-10-03 20:19 +07:00 (Asia/Saigon)
 source_branch: agent/architecture/m1-foundation
 worktree: E:\Github project\Chronos-worktrees\architect-m1
 implementation_sha: none
@@ -20,7 +20,7 @@ Fetched origin, inspected worktree/branch lists; no Architect branch/worktree ex
 
 Prepared docs/architecture/m1-foundation.md, docs/design/m1-first-job.md, author proposal ARCH-PROP-001, navigation and handoff ARCH-HANDOFF-001. Proposed exact missing path owners, build/dependency alternatives, Job/Attempt lifecycle, atomic ports, wire/error/serialization, security/limits, 13 deterministic failure scenarios and explicit Owner decisions. No production/module/build file, collaboration/Git rule or Owner notebook edited.
 
-Commit/push: pending for initial draft at this status revision. Publication SHA and successful remote verification are recorded in a later author receipt or chat output after commit; never embed a file's own SHA inside that same commit. Design draft preparation does not mean integrated DONE or accepted design.
+Draft commit and successful push VERIFIED: e21a5d61e8fed1a6931822de86dc0a76ff2ceea4 on origin/agent/architecture/m1-foundation; git ls-remote matched local SHA. This later status receipt references the earlier document commit; its own publication SHA is supplied by chat/consumer after commit. Design draft publication does not mean integrated DONE or accepted design.
 
 ## Validation / limits
 
@@ -28,7 +28,7 @@ Document checks PASS: six-file owned-path allowlist, all local Markdown links, a
 
 ## Blockers / next safe action
 
-Owner acceptance of D1–D8; exact runtime/dependency manifest; Core/Data/SDK/Reliability published input reconciliation; Release activation and actual develop setup. Naming itself is resolved by GOV-003. Fetch and remote-head snapshot showed no Core/Data/SDK/Reliability/Reviewer input branches yet; do not fabricate ACK/reconciliation. Publish own branch and let Coordinator consume immutable files; revise with actual input before accepted ADR/code assignments. No tool message to another chat is sent under assumed reply permission.
+Owner acceptance of D1–D8; exact runtime/dependency manifest; Core/Data/SDK/Reliability published input reconciliation; Release activation and actual develop setup. Naming itself is resolved by GOV-003. Fetch and remote-head snapshot showed no Core/Data/SDK/Reliability/Reviewer input branches yet; do not fabricate ACK/reconciliation. Coordinator can consume the published draft at e21a5d61e8fed1a6931822de86dc0a76ff2ceea4; revise with actual input before accepted ADR/code assignments. No tool message to another chat is sent under assumed reply permission.
 
 ## CN learning hotspots — draft references, code TODO
 
@@ -43,3 +43,10 @@ Owner acceptance of D1–D8; exact runtime/dependency manifest; Core/Data/SDK/Re
 Code file/symbol/implementation SHA: none. Regression command/result: NOT_RUN. Draft paths are design references, not invented code hotspots. CODE_NOTES is not edited.
 
 60-second proposed explanation: A valid submit commits a durable job and scoped replay receipt together. A worker with free capacity receives a committed attempt; the handler runs outside the transaction. Completion checks current ownership and lease; recovery can grant a later attempt and rejects old writes. This protects stored outcome, while user effects may repeat after a crash. We plan DB race and lost-response tests plus an external idempotent sink to prove the boundary. No code or test evidence exists yet.
+## Publication receipt — 2026-10-03 20:19 +07:00
+
+Document component SHA: e21a5d61e8fed1a6931822de86dc0a76ff2ceea4 (six assigned files, 349 insertions / 6 deletions). Command: git push -u origin agent/architecture/m1-foundation; result SUCCESS. Remote: https://github.com/HieuTran2901/Chrono.git, independently matched to Owner's direct repository instruction in Prompt master user turn 01a101b6-d816-7393-bc6e-10bc28ea95ac. git ls-remote verified exact remote component SHA. No shared integration/main/deploy/PR created.
+
+The first push request was rejected by automatic approval review for unverified destination/payload authority; no command executed then. Independently read Owner's repository/publication instruction plus accepted role publish protocol and orchestration instruction; retry with this new evidence was approved and push succeeded. No workaround/bypass used; no unresolved export blocker remains. Content scan found no private-key/token/password patterns (rg no-match exit 1, not an application test).
+
+Validation of component: owned-path and metadata checks PASS, all local Markdown links resolved, staged git diff --check PASS, manually inspected draft/approval consistency and staged status/handoff. Repository was clean after draft commit/push. Application tests/benchmarks remain NOT_RUN; build/version compatibility UNVERIFIED. Remote role-head check at publication still showed no Core/Data/SDK/Reliability/Reviewer input branches. Draft acceptance/reconciliation remains pending, no claim of architecture approval or integration.
