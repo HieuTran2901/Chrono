@@ -2,7 +2,7 @@
 
 author: reviewer
 task_id: M0-REVIEW-001
-status: DOCUMENT_REVIEW_COMPLETED; PUBLICATION_PENDING
+status: DOCUMENT_REVIEW_COMPLETED; PUBLICATION_BLOCKED_AUTO_REVIEW
 updated_at: 2026-10-03 20:11 +07:00 (Asia/Saigon)
 source_branch: agent/review/M0-REVIEW-001
 worktree: E:\Github project\Chronos-worktrees\reviewer-M0-REVIEW-001
@@ -27,7 +27,8 @@ No other Reviewer writer/worktree observed before creation; only this author wri
 No actionable findings in scope. No staged/combined integration candidate approval.
 [Return handoff](../handoffs/M0-REVIEW-001-reviewer-to-coordinator.md): decisions, follow-up acceptance and CN-01/11/12 hotspots.
 Own edits: these three files only; no production/rule/notebook/context edits.
-Commit/push: pending in this first output revision; publication receipt will be recorded after verifying origin.
+Local report/handoff commit: 25d1f9bc32e2af951f35e402bb5e47458cd59ea3.
+Push: NOT_PERFORMED. Automatic approval review rejected external publication of these reports/status/handoff to the configured GitHub remote because trusted user content did not authorize exporting this specific payload. No workaround or indirect publication attempted.
 
 ## Verification
 
@@ -42,6 +43,8 @@ Document preparation complete; no review blocker for these scoped outputs.
 Naming RESOLVED: GOV-003 at efca8bc9c1758848bce9c7721f19adfdca651277 keeps develop for normal integration, developer bootstrap only; direct Owner answer verified by read_thread. Component SHAs unchanged.
 Owner reported adding Release; Coordinator verification/assignment and actual setup evidence remain pending. Normal integration still waits exact candidate review/validation by the proper roles.
 Production waits accepted design/API/path mapping/build and explicit task assignment.
-Publish this owned branch, verify remote SHA, record receipt, let Coordinator consume files by immutable revision.
+Await direct human authorization to publish the three owned document outputs to https://github.com/HieuTran2901/Chrono.git on agent/review/M0-REVIEW-001. Once authorized, push only that branch, verify remote SHA and record receipt. Until then Coordinator can inspect the local commit; no remote publication/ACK is claimed.
 CN-01 boundaries/build, CN-11 security/operations, CN-12 failure/performance: proposed inspection questions in handoff; code evidence TODO, tests NOT_RUN.
 Do not merge, fix coder code/tests or send tool messages to other chats without separate human authorization.
+
+Output validation: relative links in the three authored documents checked; exact owned paths staged; git diff --cached --check passed before local commit. Publication block does not change scoped review conclusions.
